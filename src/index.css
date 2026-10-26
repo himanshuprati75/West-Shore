@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Custom glow animation for Emergency CTA using Westshore brand orange (#FB4D0E) */
+@keyframes emergency-glow {
+  0%, 100% {
+    box-shadow: 0 0 14px rgba(251, 77, 14, 0.4), 0 0 28px rgba(251, 77, 14, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(251, 77, 14, 0.7), 0 0 40px rgba(251, 77, 14, 0.35);
+  }
+}
+
+.btn-emergency-glow {
+  animation: emergency-glow 2s infinite ease-in-out;
+}
+
+/* Radar pulse animation for live dispatch indicator */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.0);
+    opacity: 0;
+  }
+}
+
+.radar-ping {
+  animation: radar-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Accessibility: Respect user prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .btn-emergency-glow,
+  .radar-ping {
+    animation: none !important;
+  }
+}
