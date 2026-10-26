@@ -80,6 +80,7 @@ export default function ServicesGrid({ onOpenCallModal }) {
     // Top Service 4: Water Heaters
     {
       id: 'water-heater',
+      image: '/images/water-heater.jpg',
       isTop: true,
       category: 'mechanical',
       title: 'Tank & Tankless Water Heaters',
@@ -97,6 +98,7 @@ export default function ServicesGrid({ onOpenCallModal }) {
     // Additional Service 5: Mitsubishi Ductless Mini-Splits
     {
       id: 'mini-splits',
+      image: '/images/mini-splits.jpg',
       isTop: false,
       category: 'cooling',
       title: 'Mitsubishi Electric Ductless Mini-Splits',
@@ -114,6 +116,7 @@ export default function ServicesGrid({ onOpenCallModal }) {
     // Additional Service 6: Geothermal Systems
     {
       id: 'geothermal',
+      image: '/images/geothermal.jpg',
       isTop: false,
       category: 'heating',
       title: 'Geothermal Heating & Cooling',
@@ -131,6 +134,7 @@ export default function ServicesGrid({ onOpenCallModal }) {
     // Additional Service 7: Boiler & Radiator Repair
     {
       id: 'boilers',
+      image: '/images/boiler-radiator.jpg',
       isTop: false,
       category: 'heating',
       title: 'Boiler & Hydronic Radiator Repair',
@@ -166,6 +170,7 @@ export default function ServicesGrid({ onOpenCallModal }) {
     // Additional Service 9: Indoor Air Quality & Air Scrubber
     {
       id: 'iaq-air-scrubber',
+      image: '/images/air-scrubber.jpg',
       isTop: false,
       category: 'mechanical',
       title: 'Air Scrubber by Aerus & Whole-Home IAQ',
@@ -183,6 +188,7 @@ export default function ServicesGrid({ onOpenCallModal }) {
     // Additional Service 10: Custom Sheet Metal Fabrication
     {
       id: 'sheet-metal',
+      image: '/images/sheet-metal.jpg',
       isTop: false,
       category: 'mechanical',
       title: 'Custom Sheet Metal Fabrication',
@@ -200,6 +206,7 @@ export default function ServicesGrid({ onOpenCallModal }) {
     // Additional Service 11: Commercial HVAC & Refrigeration
     {
       id: 'commercial-hvac',
+      image: '/images/commercial-hvac.jpg',
       isTop: false,
       category: 'mechanical',
       title: 'Commercial HVAC & Refrigeration',
