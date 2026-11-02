@@ -31,7 +31,7 @@ export default function Header({ onOpenCallModal }) {
     <>
       {/* Slim Mobile Trust Bar (< 640px) */}
       <div className="bg-navy-950 text-amber-300 text-[11px] font-bold py-1 px-3 border-b border-navy-800 text-center tracking-wide sm:hidden">
-        ??? Trane Comfort Specialist • Spring Lake & Tri-Cities
+        ??? Trane Comfort Specialist ï¿½ Spring Lake & Tri-Cities
       </div>
 
       {/* Desktop & Tablet Top Emergency Utility Bar (>= 640px) */}
@@ -51,7 +51,7 @@ export default function Header({ onOpenCallModal }) {
           <div className="flex items-center space-x-4">
             <span className="text-amber-400 font-semibold tracking-wide flex items-center">
               <Award className="w-3.5 h-3.5 text-amber-400 mr-1 inline" />
-              5-Star NiceJob Rated • 2023 People's Choice
+              5-Star NiceJob Rated ï¿½ 2023 People's Choice
             </span>
             <span className="text-slate-500">|</span>
             <a href="mailto:dispatch@westshoremechanical.com" className="hover:text-white transition">
@@ -89,7 +89,7 @@ export default function Header({ onOpenCallModal }) {
                   </span>
                 </div>
                 <p className="text-[10px] sm:text-xs font-medium text-slate-400 tracking-wider uppercase">
-                  Trane Comfort Specialist • Spring Lake, MI
+                  Trane Comfort Specialist ï¿½ Spring Lake, MI
                 </p>
               </div>
             </a>
@@ -114,12 +114,12 @@ export default function Header({ onOpenCallModal }) {
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
                   24/7 Live Emergency Line
                 </span>
-                <span className="text-xs text-slate-400">HQ in Spring Lake • &lt; 45 mins</span>
+                <span className="text-xs text-slate-400">HQ in Spring Lake ï¿½ &lt; 45 mins</span>
               </div>
 
               <a
                 href="tel:6168378088"
-                onClick={handleDesktopCallClick}
+                
                 id="desktop-header-call-btn"
                 className="relative inline-flex items-center justify-center px-5 sm:px-6 py-3 rounded-xl font-black text-sm sm:text-base text-white bg-rescue-500 hover:bg-rescue-600 active:scale-95 transition-all duration-150 shadow-md shadow-rescue-500/20 group"
               >
